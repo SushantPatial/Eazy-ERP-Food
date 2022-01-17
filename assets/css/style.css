@@ -597,6 +597,38 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+  .modules .col-lg-5 {
+    overflow: hidden;
+  }
+  .modules img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .modules img {
+    object-fit: contain;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modules .col-lg-5 {
+    padding: 0 15px;
+  }
+  .modules .col-md-6:nth-child(4) .module-box, .modules .col-md-6:nth-child(8) .module-box {
+    background-color: #eeeeee11;
+  }
+  .modules .col-md-6:nth-child(4) .module-box h3, .modules .col-md-6:nth-child(8) .module-box h3 {
+    color: #11184D;
+  }
+  .modules .col-md-6:nth-child(1) .module-box, .modules .col-md-6:nth-child(3) .module-box, .modules .col-md-6:nth-child(5) .module-box, .modules .col-md-6:nth-child(7) .module-box {
+    background-color: #11184D;
+  }
+  .modules .col-md-6:nth-child(1) .module-box h3, .modules .col-md-6:nth-child(3) .module-box h3, .modules .col-md-6:nth-child(5) .module-box h3, .modules .col-md-6:nth-child(7) .module-box h3 {
+    color: #fff;
+  }
+}
 
 /*--------------------------------------------------------------
 # Case_study
