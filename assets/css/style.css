@@ -559,21 +559,22 @@ a {
 --------------------------------------------------------------*/
 .modules .module-box {
   padding: 24px 20px;
-  box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.2);
+  box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.3);
   transition: 0.3s;
   height: 100%;
   cursor: default;
+  background-color: #eeeeee11;
 }
 .modules .module-box h3 {
   font-size: 18px;
-  color: var(--color-3);
+  color: #11184D;;
   font-weight: 700;
   margin: 0;
   margin-left: 5px;
 }
 .modules .module-box i {
   line-height: 0;
-  background: #ecf3ff;
+  background: #e2ecff;
   padding: 4px;
   margin-right: 10px;
   font-size: 24px;
@@ -585,8 +586,17 @@ a {
   color: #fff;
 }
 .modules img {
-  width: 100%
+  width: 100%;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.3);
 }
+.modules .col-md-6:nth-child(1) .module-box, .modules .col-md-6:nth-child(4) .module-box, .modules .col-md-6:nth-child(5) .module-box, .modules .col-md-6:nth-child(8) .module-box {
+  background-color: #11184D;
+}
+.modules .col-md-6:nth-child(1) .module-box h3, .modules .col-md-6:nth-child(4) .module-box h3, .modules .col-md-6:nth-child(5) .module-box h3, .modules .col-md-6:nth-child(8) .module-box h3 {
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Case_study
