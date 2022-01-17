@@ -632,7 +632,7 @@
             </div>
 
             <div class="form" method="post">
-                <form method="post" role="form" class="contact-form" id="contactform">
+                <form method="post" role="form" class="contact-form" id="contactform" onsubmit="check_if_capcha_is_filled">
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -931,7 +931,8 @@
 
                     <div class="row mt-3">
                         <div class="form-group">
-                            <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdYFxoeAAAAAFnxTdDS9zLwTLhHfRYaTyX7QTAl"></div>
+                            <div class="g-recaptcha brochure__form__captcha" data-callback="capcha_filled"
+                            data-expired-callback="capcha_expired" data-sitekey="6LdYFxoeAAAAAFnxTdDS9zLwTLhHfRYaTyX7QTAl" required></div>
                         </div>
                     </div>
                                         
@@ -983,16 +984,20 @@
         <!-- Contact form -->
         <script>
 
+            var allowSubmit = false;
 
-            /* Code to verify Google ReCaptcha */
-            function verifyReCaptcha(err_id){
-                if(grecaptcha.getResponse() == "") {            
-                    $('#'+err_id).html('Please check the captcha box');
-                    return false;
-                } else {
-                    $('#'+err_id).html('');
+            function capcha_filled () {
+                allowSubmit = true;
+            }
+            function capcha_expired () {
+                allowSubmit = false;
+            }
+
+            function check_if_capcha_is_filled (e) {
+                if(allowSubmit) 
                     return true;
-                }
+                e.preventDefault();
+                alert('Fill in the capcha!');
             }
 
         </script>
