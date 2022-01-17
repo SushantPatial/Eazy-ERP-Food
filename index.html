@@ -81,6 +81,7 @@
             </div>
         </header><!-- End Header -->
 
+        <div id="test"></div>
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="d-flex align-items-center">
 
@@ -632,7 +633,7 @@
             </div>
 
             <div class="form" method="post">
-                <form method="post" role="form" class="contact-form" id="contactform" onsubmit="check_if_capcha_is_filled">
+                <form method="post" role="form" class="contact-form" id="contactform" onsubmit="check_if_capcha_is_filled()">
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -947,23 +948,22 @@
         <!-- =======footer=======  -->
         <footer id="footer">
             <div class="container">
-                <div class="col-md-6">
-                    <div id="copyright">
-                    <h6>&copy; Copyright <strong><span id="year"></span></strong> Eazy ERP. All Rights Reserved</h6>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div id="copyright">
+                            <h6>&copy; Copyright <strong><span id="year"></span></strong> Eazy ERP. All Rights Reserved</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="social-links">
-                    <span>Follow us on: </span>
-                    <a href="https://www.facebook.com/eazyerp" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/eazyerp" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/2588448?trk=tyah&trkInfo=tas%3Aeazy%20b%2Cidx%3A1-2-2" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.youtube.com/channel/UCiAOxBYpm4VCZqhKQI3dZNw/videos" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <div class="col-sm-12 col-md-6 social-links">
+                        <span>Follow us on: </span>
+                        <a href="https://www.facebook.com/eazyerp" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/eazyerp" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/2588448?trk=tyah&trkInfo=tas%3Aeazy%20b%2Cidx%3A1-2-2" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/channel/UCiAOxBYpm4VCZqhKQI3dZNw/videos" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </footer><!-- End Footer -->
-
-        <!-- Book demo button -->
-        <div class="Book-Demo-BTN" style="position: fixed; right: -5px; top: 45%; z-index: 99; cursor: pointer; display: block;"><a href="#contact" aria-label="Book demo"><img src="assets/images/Book Your Demo.png" alt="free-demo" loading="lazy" width="46" height="200"></a></div>
 
         <!-- script for copyright year -->
         <script>
@@ -971,6 +971,8 @@
             document.getElementById("year").innerHTML = date;
         </script>
         
+
+            
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- Bootstrap -->

@@ -3,18 +3,20 @@ const colors = ["#ff0000", "#92d3ff", "#084a74", "#e42424", "#2d90ce"];
 const numBalls = 60;
 const balls = [];
 
+let test = document.getElementById("test");
+
 for (let i = 0; i < numBalls; i++) {
     let ball = document.createElement("div");
     ball.classList.add("ball");
     ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-    ball.style.left = `${Math.floor(Math.random() * 110)}vw`;
+    ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
     ball.style.top = `${Math.floor(Math.random() * 82)}vh`;
     ball.style.transform = `scale(${Math.random()})`;
     ball.style.width = `${Math.random()}em`;
     ball.style.height = ball.style.width;
 
     balls.push(ball);
-    document.body.append(ball);
+    test.appendChild(ball);
 }
 
 // Keyframes
