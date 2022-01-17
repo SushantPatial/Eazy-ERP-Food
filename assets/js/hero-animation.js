@@ -15,7 +15,7 @@ if (screen.width > 992) {
         ball.style.transform = `scale(${Math.random()})`;
         ball.style.width = `${Math.random()}em`;
         ball.style.height = ball.style.width;
-    
+
         balls.push(ball);
         ballsbox.appendChild(ball);
     }
