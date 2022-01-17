@@ -275,6 +275,7 @@ a {
   overflow: hidden !important;
   position: absolute;
   top: 0;
+  z-index: -1;
   height: 100%;
   width: 100%;
 }
@@ -306,6 +307,9 @@ a {
   transition: 0.5s;
   color: #fff;
   background: var(--color-2);
+}
+#hero .btn-get-started:hover {
+  background: #cc052a
 }
 #hero .btn-watch-video {
   font-size: 16px;
@@ -579,6 +583,9 @@ a {
 .modules .module-box:hover i {
   background: var(--color-2);
   color: #fff;
+}
+.modules img {
+  width: 100%
 }
 
 /*--------------------------------------------------------------
