@@ -559,22 +559,23 @@ a {
 --------------------------------------------------------------*/
 .modules .module-box {
   padding: 24px 20px;
-  box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.3);
+  box-shadow: 0px 0px 10px rgba(44, 44, 44, 0.3);
+  border-radius: 3px;
   transition: 0.3s;
   height: 100%;
   cursor: default;
-  background-color: #eeeeee11;
+  background-color: #eeeeee;
 }
 .modules .module-box h3 {
   font-size: 18px;
-  color: var(--color-1);
+  color: #333;
   font-weight: 700;
   margin: 0;
   margin-left: 5px;
 }
 .modules .module-box i {
   line-height: 0;
-  background: #e2ecff;
+  background: #ffffff;
   padding: 4px;
   margin-right: 10px;
   font-size: 24px;
@@ -591,10 +592,11 @@ a {
   box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.3);
 }
 .modules .col-md-6:nth-child(1) .module-box, .modules .col-md-6:nth-child(4) .module-box, .modules .col-md-6:nth-child(5) .module-box, .modules .col-md-6:nth-child(8) .module-box {
-  background-color: var(--color-1);
+  background-color: #fddde2;
+  box-shadow: 0px 0px 10px rgba(255, 29, 78, 0.5);
 }
 .modules .col-md-6:nth-child(1) .module-box h3, .modules .col-md-6:nth-child(4) .module-box h3, .modules .col-md-6:nth-child(5) .module-box h3, .modules .col-md-6:nth-child(8) .module-box h3 {
-  color: #fff;
+  color:  #333;
 }
 
 @media screen and (max-width: 1200px) {
@@ -620,10 +622,10 @@ a {
     background-color: #eeeeee11;
   }
   .modules .col-md-6:nth-child(4) .module-box h3, .modules .col-md-6:nth-child(8) .module-box h3 {
-    color: var(--color-1);
+    color: var(--color-2);
   }
   .modules .col-md-6:nth-child(1) .module-box, .modules .col-md-6:nth-child(3) .module-box, .modules .col-md-6:nth-child(5) .module-box, .modules .col-md-6:nth-child(7) .module-box {
-    background-color: var(--color-1);
+    background-color: #ffcada;
   }
   .modules .col-md-6:nth-child(1) .module-box h3, .modules .col-md-6:nth-child(3) .module-box h3, .modules .col-md-6:nth-child(5) .module-box h3, .modules .col-md-6:nth-child(7) .module-box h3 {
     color: #fff;
