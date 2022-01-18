@@ -567,7 +567,7 @@ a {
 }
 .modules .module-box h3 {
   font-size: 18px;
-  color: #11184D;;
+  color: var(--color-1);
   font-weight: 700;
   margin: 0;
   margin-left: 5px;
@@ -591,7 +591,7 @@ a {
   box-shadow: 0px 0px 10px rgba(63, 63, 63, 0.3);
 }
 .modules .col-md-6:nth-child(1) .module-box, .modules .col-md-6:nth-child(4) .module-box, .modules .col-md-6:nth-child(5) .module-box, .modules .col-md-6:nth-child(8) .module-box {
-  background-color: #11184D;
+  background-color: var(--color-1);
 }
 .modules .col-md-6:nth-child(1) .module-box h3, .modules .col-md-6:nth-child(4) .module-box h3, .modules .col-md-6:nth-child(5) .module-box h3, .modules .col-md-6:nth-child(8) .module-box h3 {
   color: #fff;
@@ -620,10 +620,10 @@ a {
     background-color: #eeeeee11;
   }
   .modules .col-md-6:nth-child(4) .module-box h3, .modules .col-md-6:nth-child(8) .module-box h3 {
-    color: #11184D;
+    color: var(--color-1);
   }
   .modules .col-md-6:nth-child(1) .module-box, .modules .col-md-6:nth-child(3) .module-box, .modules .col-md-6:nth-child(5) .module-box, .modules .col-md-6:nth-child(7) .module-box {
-    background-color: #11184D;
+    background-color: var(--color-1);
   }
   .modules .col-md-6:nth-child(1) .module-box h3, .modules .col-md-6:nth-child(3) .module-box h3, .modules .col-md-6:nth-child(5) .module-box h3, .modules .col-md-6:nth-child(7) .module-box h3 {
     color: #fff;
